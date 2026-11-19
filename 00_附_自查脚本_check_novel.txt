@@ -1,0 +1,73 @@
+﻿【用法】把下面的 Python 代码保存为 check_novel.py，放在项目的 tools/ 目录下，章节草稿放在 novel_src/，运行：
+ python3 tools/check_novel.py
+（也可传入具体文件路径）。输出 FAIL 的章节必须重写。
+
+#!/usr/bin/env python3
+"""写作规范自查脚本：每写完一章必须跑一遍。
+用法：python3 tools/check_novel.py [目录或文件 ...]   （默认检查 novel_src/）
+检查项：
+  1. 段均字数 >= 30（不含标题行）
+  2. 20 字以内的短段占比（建议 < 25%）
+  3. 一二三式排比 / 序数罗列（命中即不合格）
+  4. 神态描写密度（每千字至少 6 处神态词）
+"""
+import glob, os, re, sys
+
+ENUM_PATTERNS = [
+    r'第[一二三四五六七八九十]+[，,、：:]',      # 第一…第二…
+    r'[其]?[一二三四五六]是[，,：:]',            # 一是…二是…
+    r'其[一二三四五六][，,：:、]',               # 其一…其二…
+    r'[一二三四五六]来[，,：:]',                 # 一来…二来…
+    r'[一二三四五六]则[，,：:]',
+    r'[首其再]先[，,]|其次[，,]|再次[，,]',
+    r'[一二三四五六七八九十]、',                 # 一、二、三、
+    r'[一二三]\S{1,2}[，,]两\S{1,2}[，,]三\S{1,2}', # 一盏，两盏，三盏
+    r'一\S{1,2}[，,]二\S{1,2}[，,]三\S{1,2}',
+    r'[①②③④⑤⑥]|\(\d\)|（\d）|^\d[\.、]',
+]
+FACE_WORDS = ['眉', '目光', '眼神', '眼底', '眼角', '眼睫', '眼眶', '眸', '嘴角', '唇', '神色', '神情', '脸色',
+              '面色', '脸上', '笑意', '笑了', '苦笑', '冷笑', '微笑', '皱', '瞳', '喉结', '咬着', '抿',
+              '垂下眼', '抬起眼', '低下头', '偏过头', '侧过脸', '怔', '愣', '红了', '白了', '发白', '泛红',
+              '肩头', '指尖', '攥', '颤']
+
+def para_list(text):
+    lines = [l.strip() for l in text.replace('\r', '').split('\n') if l.strip()]
+    return lines[1:] if lines else []
+
+def check(path):
+    text = open(path, encoding='utf-8-sig').read()
+    paras = para_list(text)
+    if not paras:
+        return None
+    n = len(paras)
+    chars = sum(len(p) for p in paras)
+    avg = chars / n
+    short = sum(1 for p in paras if len(p) < 20)
+    face = sum(sum(p.count(w) for w in FACE_WORDS) for p in paras)
+    face_k = face / (chars / 1000)
+    enum_hits = []
+    for p in paras:
+        for pat in ENUM_PATTERNS:
+            m = re.search(pat, p, re.M)
+            if m:
+                enum_hits.append(p[max(0, m.start() - 6): m.end() + 10])
+                break
+    ok = avg >= 30 and not enum_hits and face_k >= 6
+    print(f"{'OK  ' if ok else 'FAIL'} {os.path.basename(path)[:22]:24s} 段数={n:3d} 字数={chars:5d} 段均={avg:5.1f} 短段={short/n*100:4.0f}% 神态/千字={face_k:4.1f} 排比命中={len(enum_hits)}")
+    for h in enum_hits[:6]:
+        print('      ↳ 排比/罗列疑似：', h)
+    return ok
+
+def main():
+    targets = sys.argv[1:] or [os.path.join(os.path.dirname(__file__), '..', 'novel_src')]
+    files = []
+    for t in targets:
+        if os.path.isdir(t):
+            files += sorted(glob.glob(os.path.join(t, '*第*章*.txt')))
+        else:
+            files.append(t)
+    bad = [f for f in files if check(f) is False]
+    print('\n全部通过' if not bad else f'\n未通过 {len(bad)} 章')
+
+if __name__ == '__main__':
+    main()
