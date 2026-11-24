@@ -1,186 +1,152 @@
-{
-  "batch": "569-598",
-  "total_chars": 80142,
-  "chapters": [
-    {
-      "file": "569_第五百六十九章_验药亭.txt",
-      "chapter": 569,
-      "title": "第五百六十九章 验药亭",
-      "chars": 2741
-    },
-    {
-      "file": "570_第五百七十章_台下.txt",
-      "chapter": 570,
-      "title": "第五百七十章 台下",
-      "chars": 2629
-    },
-    {
-      "file": "571_第五百七十一章_红薯.txt",
-      "chapter": 571,
-      "title": "第五百七十一章 红薯",
-      "chars": 2789
-    },
-    {
-      "file": "572_第五百七十二章_观星台.txt",
-      "chapter": 572,
-      "title": "第五百七十二章 观星台",
-      "chars": 2601
-    },
-    {
-      "file": "573_第五百七十三章_半卷.txt",
-      "chapter": 573,
-      "title": "第五百七十三章 半卷",
-      "chars": 2651
-    },
-    {
-      "file": "574_第五百七十四章_偏阁.txt",
-      "chapter": 574,
-      "title": "第五百七十四章 偏阁",
-      "chars": 2608
-    },
-    {
-      "file": "575_第五百七十五章_栅栏.txt",
-      "chapter": 575,
-      "title": "第五百七十五章 栅栏",
-      "chars": 2617
-    },
-    {
-      "file": "576_第五百七十六章_钉子.txt",
-      "chapter": 576,
-      "title": "第五百七十六章 钉子",
-      "chars": 2622
-    },
-    {
-      "file": "577_第五百七十七章_不许.txt",
-      "chapter": 577,
-      "title": "第五百七十七章 不许",
-      "chars": 2605
-    },
-    {
-      "file": "578_第五百七十八章_床前.txt",
-      "chapter": 578,
-      "title": "第五百七十八章 床前",
-      "chars": 2624
-    },
-    {
-      "file": "579_第五百七十九章_朱笔.txt",
-      "chapter": 579,
-      "title": "第五百七十九章 朱笔",
-      "chars": 2593
-    },
-    {
-      "file": "580_第五百八十章_好说.txt",
-      "chapter": 580,
-      "title": "第五百八十章 好说",
-      "chars": 2619
-    },
-    {
-      "file": "581_第五百八十一章_诏前.txt",
-      "chapter": 581,
-      "title": "第五百八十一章 诏前",
-      "chars": 2651
-    },
-    {
-      "file": "582_第五百八十二章_殿内.txt",
-      "chapter": 582,
-      "title": "第五百八十二章 殿内",
-      "chars": 2616
-    },
-    {
-      "file": "583_第五百八十三章_数.txt",
-      "chapter": 583,
-      "title": "第五百八十三章 数",
-      "chars": 2600
-    },
-    {
-      "file": "584_第五百八十四章_弥留.txt",
-      "chapter": 584,
-      "title": "第五百八十四章 弥留",
-      "chars": 2637
-    },
-    {
-      "file": "585_第五百八十五章_乱铃.txt",
-      "chapter": 585,
-      "title": "第五百八十五章 乱铃",
-      "chars": 2614
-    },
-    {
-      "file": "586_第五百八十六章_还时.txt",
-      "chapter": 586,
-      "title": "第五百八十六章 还时",
-      "chars": 2617
-    },
-    {
-      "file": "587_第五百八十七章_摊牌.txt",
-      "chapter": 587,
-      "title": "第五百八十七章 摊牌",
-      "chars": 2639
-    },
-    {
-      "file": "588_第五百八十八章_令匣.txt",
-      "chapter": 588,
-      "title": "第五百八十八章 令匣",
-      "chars": 2669
-    },
-    {
-      "file": "589_第五百八十九章_水门.txt",
-      "chapter": 589,
-      "title": "第五百八十九章 水门",
-      "chars": 2637
-    },
-    {
-      "file": "590_第五百九十章_一封信.txt",
-      "chapter": 590,
-      "title": "第五百九十章 一封信",
-      "chars": 2591
-    },
-    {
-      "file": "591_第五百九十一章_十里亭.txt",
-      "chapter": 591,
-      "title": "第五百九十一章 十里亭",
-      "chars": 2623
-    },
-    {
-      "file": "592_第五百九十二章_雁门.txt",
-      "chapter": 592,
-      "title": "第五百九十二章 雁门",
-      "chars": 2618
-    },
-    {
-      "file": "593_第五百九十三章_风雪.txt",
-      "chapter": 593,
-      "title": "第五百九十三章 风雪",
-      "chars": 2684
-    },
-    {
-      "file": "594_第五百九十四章_比刀.txt",
-      "chapter": 594,
-      "title": "第五百九十四章 比刀",
-      "chars": 2664
-    },
-    {
-      "file": "595_第五百九十五章_向导.txt",
-      "chapter": 595,
-      "title": "第五百九十五章 向导",
-      "chars": 2746
-    },
-    {
-      "file": "596_第五百九十六章_热泉.txt",
-      "chapter": 596,
-      "title": "第五百九十六章 热泉",
-      "chars": 3175
-    },
-    {
-      "file": "597_第五百九十七章_夜袭.txt",
-      "chapter": 597,
-      "title": "第五百九十七章 夜袭",
-      "chars": 2991
-    },
-    {
-      "file": "598_第五百九十八章_北门符.txt",
-      "chapter": 598,
-      "title": "第五百九十八章 北门符",
-      "chars": 2671
-    }
-  ]
-}
+[
+ {
+  "file": "599_第五百九十九章_河风.txt",
+  "chars": 2635,
+  "paragraphs": 54
+ },
+ {
+  "file": "600_第六百章_同车.txt",
+  "chars": 2600,
+  "paragraphs": 62
+ },
+ {
+  "file": "601_第六百零一章_老牧妇.txt",
+  "chars": 2640,
+  "paragraphs": 60
+ },
+ {
+  "file": "602_第六百零二章_下马.txt",
+  "chars": 2609,
+  "paragraphs": 59
+ },
+ {
+  "file": "603_第六百零三章_旧帕.txt",
+  "chars": 2656,
+  "paragraphs": 67
+ },
+ {
+  "file": "604_第六百零四章_父女.txt",
+  "chars": 2598,
+  "paragraphs": 65
+ },
+ {
+  "file": "605_第六百零五章_羊羔.txt",
+  "chars": 2610,
+  "paragraphs": 71
+ },
+ {
+  "file": "606_第六百零六章_分兵.txt",
+  "chars": 2625,
+  "paragraphs": 65
+ },
+ {
+  "file": "607_第六百零七章_背靠背.txt",
+  "chars": 2903,
+  "paragraphs": 80
+ },
+ {
+  "file": "608_第六百零八章_错拍簧.txt",
+  "chars": 2825,
+  "paragraphs": 74
+ },
+ {
+  "file": "609_第六百零九章_读令.txt",
+  "chars": 2602,
+  "paragraphs": 67
+ },
+ {
+  "file": "610_第六百一十章_挑明.txt",
+  "chars": 2606,
+  "paragraphs": 71
+ },
+ {
+  "file": "611_第六百一十一章_夜驰.txt",
+  "chars": 2631,
+  "paragraphs": 74
+ },
+ {
+  "file": "612_第六百一十二章_线奴.txt",
+  "chars": 2693,
+  "paragraphs": 81
+ },
+ {
+  "file": "613_第六百一十三章_草料.txt",
+  "chars": 2607,
+  "paragraphs": 66
+ },
+ {
+  "file": "614_第六百一十四章_关下.txt",
+  "chars": 2619,
+  "paragraphs": 71
+ },
+ {
+  "file": "615_第六百一十五章_车阵.txt",
+  "chars": 2649,
+  "paragraphs": 68
+ },
+ {
+  "file": "616_第六百一十六章_背击.txt",
+  "chars": 2624,
+  "paragraphs": 72
+ },
+ {
+  "file": "617_第六百一十七章_孩子.txt",
+  "chars": 3012,
+  "paragraphs": 87
+ },
+ {
+  "file": "618_第六百一十八章_议和.txt",
+  "chars": 2586,
+  "paragraphs": 66
+ },
+ {
+  "file": "619_第六百一十九章_一屋子.txt",
+  "chars": 2602,
+  "paragraphs": 67
+ },
+ {
+  "file": "620_第六百二十章_粮仓顶.txt",
+  "chars": 2589,
+  "paragraphs": 63
+ },
+ {
+  "file": "621_第六百二十一章_别扭.txt",
+  "chars": 2560,
+  "paragraphs": 66
+ },
+ {
+  "file": "622_第六百二十二章_银扣.txt",
+  "chars": 2537,
+  "paragraphs": 73
+ },
+ {
+  "file": "623_第六百二十三章_北行.txt",
+  "chars": 2893,
+  "paragraphs": 80
+ },
+ {
+  "file": "624_第六百二十四章_烽燧.txt",
+  "chars": 2926,
+  "paragraphs": 90
+ },
+ {
+  "file": "625_第六百二十五章_余波.txt",
+  "chars": 2548,
+  "paragraphs": 71
+ },
+ {
+  "file": "626_第六百二十六章_祖地.txt",
+  "chars": 2876,
+  "paragraphs": 75
+ },
+ {
+  "file": "627_第六百二十七章_椅子.txt",
+  "chars": 2605,
+  "paragraphs": 71
+ },
+ {
+  "file": "628_第六百二十八章_后半段.txt",
+  "chars": 2602,
+  "paragraphs": 76
+ }
+]
